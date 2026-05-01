@@ -1,1 +1,96 @@
-<section class="container contacts">Contacts</section>
+<section class="contacts" id="contacts">
+  <div class="container contacts__container">
+    <div class="contacts__title-wrap">
+      <h3>Connect</h3>
+      <h2 class="contacts__title vissually-hidden">
+        Order your unique jewelry
+      </h2>
+      <p>We'd love to hear more details from you!</p>
+    </div>
+
+    <div class="contacts__content-wrap">
+      <address>
+        <ul class="contacts__nav-list">
+          <li class="contacts__nav-item">
+            <svg class="contacts__nav-icon" width="32" height="32">
+              <use href="/"></use>
+            </svg>
+            <p class="contacts__nav-text">Email</p>
+            <a href="mailto:info@handmadejewelry.com" rel="noopener noreferer"
+              >info@handmadejewelry.com</a
+            >
+          </li>
+          <li class="contacts__nav-item">
+            <svg class="contacts__nav-icon" width="32" height="32">
+              <use href="/"></use>
+            </svg>
+            <p class="contacts__nav-text">Phone</p>
+            <a href="tel:+15550000000" rel="noopener noreferer"
+              >+1 (555) 000-0000</a
+            >
+          </li>
+
+          <li class="contacts__nav-item">
+            <svg class="contacts__nav-icon" width="32" height="32">
+              <use href="/"></use>
+            </svg>
+            <p class="contacts__nav-text">Office</p>
+            <a
+              href="https://maps.app.goo.gl/3qhNZ9JwaxwPTXyC7"
+              target="blank"
+              rel="noopener noreferer nofollow"
+              >76-8 Oakington Manor Dr, London, UK</a
+            >
+          </li>
+        </ul>
+      </address>
+
+      <form class="contacts__form">
+        <div class="form__field">
+          <label for="user-name" class="form__label">Name*</label
+          ><input
+            class="form__input"
+            id="user-name"
+            name="user-name"
+            type="text"
+            title="Please enter the correct name"
+            placeholder="Tony"
+            minlength="5"
+            maxlength="28"
+            pattern="^[a-zA-Z\s\.]{5,28}$"
+            required
+          />
+        </div>
+
+        <div class="form__field">
+          <label for="user-phone" class="form__label">Phone*</label
+          ><input
+            class="form__input"
+            id="user-phone"
+            name="user-phone"
+            type="tel"
+            title="Please enter the correct phone"
+            placeholder="+1 234 567 8900"
+            pattern="^+[0-9\s]{14}$"
+            required
+          />
+        </div>
+
+        <div class="form__textarea-field">
+          <label for="user-comments" class="form__label"
+            >Describe what you want</label
+          ><textarea
+            class="form__input form__textarea"
+            id="user-comments"
+            name="user-comments"
+            placeholder="Type your message..."
+            maxlength="500"
+          >
+          </textarea>
+        </div>
+
+        <button class="submit-button" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</section>
