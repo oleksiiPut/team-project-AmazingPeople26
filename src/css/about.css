@@ -56,30 +56,32 @@ section.about {
 }
 
 .about-list-item {
+  position: relative;
   font-weight: 700;
   font-size: 18px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 8px;
+  padding-left: 32px;
 }
 
-*::before {
+.about-list-item::before {
+  content: '';
+  position: absolute;
+  display: inline-block;
   width: 24px;
   height: 24px;
-  display: inline-block;
+  left: 0px;
+  top: 1.5px;
 }
 
 .about-nature::before {
-  content: url(../img/about/nature.svg);
+  background-image: url(/img/about/nature.svg);
 }
 
 .about-love::before {
-  content: url(../img/about/love.svg);
+  background-image: url(/img/about/love.svg);
 }
 
 .about-story::before {
-  content: url(../img/about/story.svg);
+  background-image: url(/img/about/story.svg);
 }
 
 @media screen and (min-width: 1440px) {
