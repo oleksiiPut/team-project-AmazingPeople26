@@ -65,19 +65,27 @@
     flex-direction: row;
     gap: 25px;
   }
+
+  @media only screen and (min-width: 1440px) {
+    gap: 32px;
+  }
 }
 
 .contacts__nav-item {
   width: 100%;
   padding: 8px 12p;
 
+  @media only screen and (min-width: 768px) {
+    width: calc((100% - (25px * 2)) / 3);
+  }
+
   @media only screen and (min-width: 1440px) {
     width: calc((100% - 32px) / 2);
-    gap: 32px;
   }
 }
 
 .contacts__nav-icon {
+  fill: #000;
   margin-bottom: 16px;
 }
 
