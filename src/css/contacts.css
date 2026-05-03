@@ -55,7 +55,7 @@
   }
 }
 
-.contacts__nav-list {
+.contacts__address-list {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -71,7 +71,7 @@
   }
 }
 
-.contacts__nav-item {
+.contacts__address-item {
   width: 100%;
   padding: 8px 12p;
 
@@ -84,12 +84,12 @@
   }
 }
 
-.contacts__nav-icon {
+.contacts__address-icon {
   fill: #000;
   margin-bottom: 16px;
 }
 
-.contacts__nav-text {
+.contacts__address-text {
   font-family: 'Sora', sans-serif;
   font-weight: 400;
   font-size: 20px;
@@ -98,9 +98,24 @@
   margin-bottom: 8px;
 }
 
-.contacts__nav-link {
+.contacts__address-link {
   text-decoration: underline;
   text-decoration-skip-ink: none;
+}
+
+.contacts__address-link:hover,
+.contacts__address-link:focus {
+  cursor: pointer;
+}
+
+.contacts__address-link:active {
+  color: #8668c7;
+  text-decoration: none;
+}
+
+.contacts__address-link:visited {
+  color: #000;
+  opacity: 0.3;
 }
 
 .contacts__form {
