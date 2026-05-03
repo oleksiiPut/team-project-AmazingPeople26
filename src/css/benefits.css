@@ -1,5 +1,4 @@
 .benefits {
-  padding: 64px 20px;
   background-color: #fff;
 }
 
@@ -26,6 +25,7 @@
   gap: 60px;
 }
 .benefits_item {
+  border-radius: 8px;
   text-align: center;
   padding: 32px 12px;
   background: #f2f2f2;
