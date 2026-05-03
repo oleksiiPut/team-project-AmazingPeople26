@@ -1,0 +1,232 @@
+.contacts__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 48px;
+}
+
+.contacts__title-wrap {
+  width: 100%;
+}
+
+.contacts__subtitle {
+  width: 100%;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.contacts__title {
+  font-family: 'Sora', sans-serif;
+  width: 100%;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  margin-bottom: 24px;
+
+  @media only screen and (min-width: 1440px) {
+    font-size: 48px;
+  }
+}
+
+.contacts__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.contacts__content-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+
+  @media only screen and (min-width: 1440px) {
+    flex-direction: row-reverse;
+  }
+}
+
+.contacts__address {
+  font-style: normal;
+
+  @media only screen and (min-width: 1440px) {
+    width: calc((100% - 32px) / 2);
+  }
+}
+
+.contacts__nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 24px;
+
+  @media only screen and (min-width: 768px) {
+    flex-direction: row;
+    gap: 25px;
+  }
+}
+
+.contacts__nav-item {
+  width: 100%;
+  padding: 8px 12p;
+
+  @media only screen and (min-width: 1440px) {
+    width: calc((100% - 32px) / 2);
+    gap: 32px;
+  }
+}
+
+.contacts__nav-icon {
+  margin-bottom: 16px;
+}
+
+.contacts__nav-text {
+  font-family: 'Sora', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+  margin-bottom: 8px;
+}
+
+.contacts__nav-link {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+
+.contacts__form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @media only screen and (min-width: 1440px) {
+    width: calc((100% - 32px) / 2);
+  }
+}
+
+.form__label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.form__input {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  outline: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000;
+  margin-bottom: 24px;
+}
+
+.form__input:hover,
+.form__input:focus,
+.form__input:active {
+  border: 1px solid #ccc16e;
+}
+
+.form__input:focus::placeholder {
+  opacity: 0;
+}
+
+.form__input:not(:placeholder-shown) {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.form__input:not(:placeholder-shown):invalid {
+  border-color: #8c0000;
+  margin-bottom: 8px;
+}
+
+.form__input:not(:placeholder-shown):valid {
+  border-color: rgba(0, 0, 0, 0.15);
+}
+
+.error-message {
+  display: none;
+  color: #8c0000;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.form__input:not(:placeholder-shown):invalid + .error-message {
+  display: block;
+}
+
+.form__textarea {
+  padding: 12px;
+  height: 180px;
+  resize: none;
+  background: var(--opacity-transparent);
+}
+
+.form__textarea:placeholder-shown::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.form__textarea:focus::placeholder {
+  opacity: 0;
+}
+
+.submit-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  height: 36px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000;
+  background-color: #ccc16e;
+  border: 1px solid #ccc16e;
+  outline: none;
+  cursor: pointer;
+  pointer-events: none;
+  transition: box-shadow 3s;
+
+  @media only screen and (min-width: 768px) {
+    padding: 6px 69.5px;
+    width: 249px;
+  }
+
+  @media only screen and (min-width: 1440px) {
+    padding: 6px 98px;
+    width: 192px;
+  }
+}
+
+.submit-button:hover,
+.submit-button:focus {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.form__input:invalid:not(:placeholder-shown) ~ .submit-button {
+  background-color: #ccc16e;
+  opacity: 0.3;
+}
+
+.form__input:valid:not(:placeholder-shown)
+  ~ .form__input:valid:not(:placeholder-shown)
+  ~ .submit-button {
+  background-color: #ccc16e;
+  pointer-events: auto;
+}
+
+.submit-button:active {
+  box-shadow: inset 0 0 8px 0 rgba(0, 0, 0, 0.32);
+  pointer-events: none;
+  background-color: #ccc16e;
+  opacity: 0.3;
+}
