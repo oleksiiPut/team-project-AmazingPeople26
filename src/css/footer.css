@@ -58,10 +58,7 @@
     color: #000;
     transition: color 250ms ease;
 }
-.footer-social-link:hover,
-.footer-social-link:focus {
-    color: #a27b5c;
-}
+
 
 .footer-social-icon {
     width: 24px;
@@ -85,10 +82,7 @@
     transition: color 250ms ease;
 }
 
-.footer-nav-link:hover,
-.footer-nav-link:focus {
-    color: #a27b5c;
-}
+
 
 .footer-bottom {
     padding-top: 24px;
@@ -106,6 +100,28 @@
 @media screen and (min-width: 768px) {
     .footer {
         padding: 96px 0 80px;
+    }
+
+    .footer-social-link:hover,
+    .footer-social-link:focus {
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+    }
+
+    .footer-social-link:active {
+        color: #8668c7;
+        text-decoration: none;
+    }
+
+    .footer-nav-link:hover,
+    .footer-nav-link:focus {
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+    }
+
+    .footer-nav-link:active {
+        color: #8668c7;
+        text-decoration: none;
     }
 
     .footer .container {
