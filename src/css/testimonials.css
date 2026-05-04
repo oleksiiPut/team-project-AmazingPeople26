@@ -86,6 +86,10 @@
 }
 
 @media screen and (min-width: 1440px) {
+
+.testimonials-list{
+    gap: 32px;
+}
  
 .testimonial-image {
 width: 304px;

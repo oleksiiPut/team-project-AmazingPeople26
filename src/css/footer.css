@@ -88,6 +88,28 @@
         padding: 96px 0 80px;
     }
 
+    .footer-social-link:hover,
+    .footer-social-link:focus {
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+    }
+
+    .footer-social-link:active {
+        color: #8668c7;
+        text-decoration: none;
+    }
+
+    .footer-nav-link:hover,
+    .footer-nav-link:focus {
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+    }
+
+    .footer-nav-link:active {
+        color: #8668c7;
+        text-decoration: none;
+    }
+
     .footer .container {
         max-width: 768px;
         padding: 0 76px;
