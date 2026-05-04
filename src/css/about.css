@@ -8,6 +8,10 @@ section.about {
   }
 }
 
+picture {
+  display: block;
+}
+
 .about-img {
   margin-bottom: 32px;
   width: 335px;
@@ -27,21 +31,14 @@ section.about {
     margin-bottom: 0;
     width: 640px;
   }
+
+  .about-content-wrapper {
+    width: 640px;
+  }
 }
 
 .about-title {
-  font-family: 'Sora', sans-serif;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 1.2;
-  letter-spacing: -0.01em;
   margin-bottom: 24px;
-}
-
-@media screen and (min-width: 1440px) {
-  .about-title {
-    font-size: 48px;
-  }
 }
 
 .about-text {
