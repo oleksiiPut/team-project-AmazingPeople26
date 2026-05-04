@@ -1,1 +1,44 @@
-<div class="container mob-menu">Mobile Menu</div>
+<div class="mob-menu" id="mob-menu" data-menu>
+  <div class="mob-menu-container">
+    <div class="mob-menu-top">
+      <a class="mob-menu-logo" href="/index.html" aria-label="На головну">
+        <svg class="mob-menu-logo-icon" width="160" height="68">
+          <use href="/img/icons.svg#icon-logo"></use>
+        </svg>
+      </a>
+
+      <button
+        class="mob-menu-close"
+        type="button"
+        aria-label="Закрити меню"
+        data-menu-close
+      >
+        <svg class="mob-menu-close-icon" width="24" height="24">
+          <use href="/img/icons.svg#close"></use>
+        </svg>
+      </button>
+    </div>
+
+    <nav class="mob-menu-nav" aria-label="Мобільна навігація">
+      <ul class="mob-menu-list">
+        <li class="mob-menu-item">
+          <a class="mob-menu-link" href="#about">About us</a>
+        </li>
+        <li class="mob-menu-item">
+          <a class="mob-menu-link" href="#benefits">Benefits</a>
+        </li>
+        <li class="mob-menu-item">
+          <a class="mob-menu-link" href="#gallery">Gallery</a>
+        </li>
+        <li class="mob-menu-item">
+          <a class="mob-menu-link" href="#testimonials">Testimonials</a>
+        </li>
+        <li class="mob-menu-item">
+          <a class="mob-menu-link" href="#contacts">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+
+    <a class="mob-menu-order" href="#contacts">Order Now</a>
+  </div>
+</div>
