@@ -55,7 +55,7 @@
   width: 100%;
   height: 100%;
   display: block;
-  object-fit: cover;
+  object-fit: none;
 }
 
 @media screen and (min-width: 768px){
@@ -80,6 +80,9 @@
     width: 250px;
 }
 
+.testimonial_text {
+    margin-bottom: 43px;
+}
 }
 
 @media screen and (min-width: 1440px) {
@@ -100,5 +103,9 @@ height: 260px;
 
 .testimonials-title {
     font-size: 48px;
+}
+
+.testimonial_text {
+    margin-bottom: 97px;
 }
 }
