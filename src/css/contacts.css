@@ -5,10 +5,6 @@
   gap: 48px;
 }
 
-.contacts__title-wrap {
-  width: 100%;
-}
-
 .contacts__subtitle {
   width: 100%;
   font-weight: 600;
@@ -102,7 +98,7 @@
   line-height: 1.5;
   color: #000;
   margin-bottom: 8px;
-  transition: border-color 0.3s;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form__input:hover,
@@ -115,13 +111,10 @@
   opacity: 0;
 }
 
-.form__input:not(:placeholder-shown) {
-  border: 1px solid rgba(0, 0, 0, 0.15);
-}
-
-.form__input:not(:placeholder-shown):invalid {
-  border-color: #8c0000;
-  margin-bottom: 8px;
+.form__input:not(:placeholder-shown):invalid,
+.form__input:not(:placeholder-shown):invalid:focus {
+  border-color: #8c0000 !important;
+  color: #8c0000;
 }
 
 .form__input:not(:placeholder-shown):valid {
@@ -129,27 +122,23 @@
 }
 
 .error-message {
-  display: block;
-  visibility: hidden;
-  height: 16px;
+  display: none;
   color: #8c0000;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.5;
-  margin-bottom: 0;
-  transition: opacity 0.3s;
+  margin-bottom: 8px;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form__input:not(:placeholder-shown):invalid + .error-message {
-  visibility: visible;
-  opacity: 1;
+  display: block;
 }
 
 .form__textarea {
   padding: 12px;
   height: 180px;
   resize: none;
-  background: rgba(255, 255, 255, 0);
   margin-bottom: 24px;
 }
 
@@ -185,13 +174,17 @@
   transform: scale(0.98);
 }
 
-.form__input:not(:placeholder-shown):invalid ~ .submit-button {
+.contacts__form:has(.form__input:not(:placeholder-shown):invalid)
+  .submit-button,
+.contacts__form:focus-within:has(.form__input:invalid) .submit-button,
+.contacts__form:has(.form__input:not(:placeholder-shown):valid):has(
+    .form__input:placeholder-shown:required
+  )
+  .submit-button {
   background-color: #ccc16e;
   opacity: 0.3;
-  border-color: transparent;
   pointer-events: none;
-  box-shadow: none;
-  transform: none;
+  cursor: not-allowed;
 }
 
 @media only screen and (min-width: 768px) {
@@ -202,6 +195,16 @@
 
   .contacts__address-item {
     width: calc((100% - (2 * 25px)) / 3);
+  }
+
+  .error-message {
+    display: block;
+    visibility: hidden;
+    height: 16px;
+  }
+
+  .form__input:not(:placeholder-shown):invalid + .error-message {
+    visibility: visible;
   }
 
   .submit-button {
