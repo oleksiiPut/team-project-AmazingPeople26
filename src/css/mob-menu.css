@@ -42,8 +42,6 @@
 
 .mob-menu-logo-icon {
   display: block;
-  min-width: 84px;
-  height: 36px;
   flex-shrink: 0;
 }
 
@@ -120,7 +118,7 @@
 }
 
 .mob-menu-order:hover,
-.mob-menu-order:focus {
+.mob-menu-order:focus-visible {
   background: transparent;
 }
 
