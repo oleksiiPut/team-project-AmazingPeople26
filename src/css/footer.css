@@ -150,7 +150,7 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 32px;
-    width: 75%;
+  width: 75%;
 }
 
   .footer-social-item {
@@ -160,7 +160,7 @@
 .footer-nav {
   display: flex;
   justify-content: flex-start;
-    width: 25%;
+  width: 25%;
 }
 
   .footer-nav-list {
